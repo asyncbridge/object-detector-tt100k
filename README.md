@@ -2,9 +2,7 @@
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 
-This repository is an object detector docker container for Tsinghua-Tencent 100K benchmark.  
-It is tested with Nvidia Geforce GTX 1080 Ti. This docker container will try to download tt100k dataset and a weight file from AWS S3 after starting this docker service.  
-To access AWS S3, you need to change AWS config file as follows. You can see the AWS config file in src/.aws/config.  
+This repository is an object detector docker container for Tsinghua-Tencent 100K benchmark. This docker container uses Caffe deep learning framework for TT100K  and Flask for REST API. It is tested with Nvidia Geforce GTX 1080 Ti. This docker container will try to download tt100k dataset and a weight file from AWS S3 after starting this docker service. To access AWS S3, you need to change AWS config file as follows. You can see the AWS config file in src/.aws/config.  
 
 ```bash
 [default]
