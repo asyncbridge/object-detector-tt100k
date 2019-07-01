@@ -11,6 +11,23 @@ aws_secret_access_key=HDaDnIfgkQ8IRvB02gdhslsdfZ+0dfg28pmfhDAc
 region=ap-northeast-2
 ```
 
+- AWS S3 Directory Structure  
+
+```
+your-site
+- caffe
+  - tt100k
+    - data
+      - lmdb
+        . test_men.binaryproto
+      - test
+        . *.jpg
+      . annotations.json
+    - weights
+      . model.caffemodel
+      . model.prototxt
+```
+
 ## Directories
 - You can see the directory structure as follows after this docker service is run.  
 
@@ -73,7 +90,7 @@ The detected_embed_image field has a detected image and the image format is png 
 
 ### Detect API Test Example
 - Detect API Request
-```bash
+```
 POST http://localhost:5003/detect_object HTTP/1.1
 …
 content-type: multipart/form-data; boundary=--------------------------836206036305278683940222
@@ -85,7 +102,7 @@ Content-Type: image/jpeg
 …
 ```
 - Detect API Response
-```bash
+```
 HTTP/1.1 200 OK
 Content-Length: 1024
 Content-Type: application/json
