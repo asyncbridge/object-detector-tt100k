@@ -99,19 +99,16 @@ Connection: Keep-Alive
   "status_code": 200,
   "result": {
       "data": [
-	              {"detected_results": 
-		               {"imgs": 
-			                {"0": 
-				              {"objects": [{"category": "il90", 
-							                "score": 648.0, 
-											"bbox": {"xmin": 1056.0, 
-											         "ymin": 768.0, 
-											         "ymax": 822.0, 
-											         "xmax": 1105.5}}
-								]}}}}, 
-					          {"elapsed_time": 6.22083306312561}
-			  ]
- }
+	       {"detected_results": 
+		   {"imgs": {"0": {"objects": [{"category": "il90", 
+					        "score": 648.0, 
+						"bbox": {"xmin": 1056.0, 
+						"ymin": 768.0, 
+						"ymax": 822.0, 
+						"xmax": 1105.5}}
+					]}}}}, {"elapsed_time": 6.22083306312561}
+     ]
+  }
 }
 ```
 
