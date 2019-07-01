@@ -12,9 +12,6 @@ region=ap-northeast-2
 ```
 
 - AWS S3 Directory Structure  
-[entrypoint.sh]  
-aws s3 sync s3://your-site/caffe/tt100k/data /workspace/tt100k/data  
-aws s3 sync s3://your-site/caffe/tt100k/weights /workspace/tt100k/weights  
 
 ```
 your-site
@@ -29,6 +26,13 @@ your-site
     - weights
       . model.caffemodel
       . model.prototxt
+```
+
+- entrypoint.sh
+
+```
+aws s3 sync s3://your-site/caffe/tt100k/data /workspace/tt100k/data
+aws s3 sync s3://your-site/caffe/tt100k/weights /workspace/tt100k/weights
 ```
 
 ## Directories
