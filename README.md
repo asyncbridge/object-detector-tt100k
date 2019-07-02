@@ -12,6 +12,7 @@ region=ap-northeast-2
 ```
 
 - AWS S3 Directory Structure  
+Your expected AWS S3 directory structure is as follows.  
 
 ```
 your-site
@@ -28,7 +29,8 @@ your-site
       . model.prototxt
 ```
 
-- entrypoint.sh
+- entrypoint.sh  
+The test data of tt100k and weight file will be downloaded after running this docker service.  
 
 ```
 aws s3 sync s3://your-site/caffe/tt100k/data /workspace/tt100k/data
