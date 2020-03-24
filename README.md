@@ -136,11 +136,13 @@ Connection: Keep-Alive
 
 ## License
 
-It is cited from:  
+It is cited from:
 
-@InProceedings{Zhe_2016_CVPR,
-author = {Zhu, Zhe and Liang, Dun and Zhang, Songhai and Huang, Xiaolei and Li, Baoli and Hu, Shimin},
-title = {Traffic-Sign Detection and Classification in the Wild},
-booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-year = {2016}
-}
+    @InProceedings{Zhe_2016_CVPR,
+	author = {Zhu, Zhe and Liang, Dun and Zhang, Songhai and Huang, Xiaolei and Li, Baoli and Hu, Shimin},
+	title = {Traffic-Sign Detection and Classification in the Wild},
+	booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+	year = {2016}
+	}
+	
+
